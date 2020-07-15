@@ -1,0 +1,113 @@
+Ass day1
+Ankit sahu
+
+Q1)Explain console.log() and console.warn()
+->Console.log()
+  The console. log() is a function that writes a message to log on the debugging console, 
+  such as Webkit or Firebug. In a browser you will not see anything on the screen. It logs 
+  a message to a debugging console. It is only available in Firefox with Firebug and in 
+  Webkit based browsers  
+
+->Console.warn()
+  he console. warn() method is used to write a warning message in the console. So open the 
+  console to display the output (warning message). Syntax: console.warn( message )
+
+Q2)difference between var ,Let ,Const.
+-> Var:
+   The scope of a variable defined with the keyword “var” is limited to the “function” 
+   within which it is defined. If it is defined outside any function, the scope of the 
+   variable is global.var is “function scoped”.
+  eg:{
+      var a=10;
+      console.log(a);
+     } //block 1
+     {
+       a++;
+       console.log(a);
+     } //block 2
+
+-> Let:
+   The scope of a variable defined with the keyword “let” or “const” is limited to the “block”
+   defined by curly braces i.e. {} .“let” and “const” are“block scoped”.
+   eg:{
+        let a=10;
+        console.log(a);
+      } //block 1
+      {
+        a++;
+        console.log(a);
+      } //block 2
+
+-> Const:
+   The scope of a variable defined with the keyword “const” is limited to the block defined by 
+   curly braces. However if a variable is defined with keyword const, it cannot be reassigned.
+  “const” cannot be re-assigned to a new value. However it CAN be mutated.
+   eg:{
+        const PI=3.14;
+        console.log(PI);
+      } //block 1
+     {
+       console.log(PI);
+     } //block 2
+
+Q3)Brief intro on available data types in javascript
+-> Data types basically specify what kind of data can be stored and manipulated within a program.
+
+  There are six basic data types in JavaScript which can be divided into three main categories: 
+  primitive (or primary), composite (or reference), and special data types. String, Number, and 
+  Boolean are primitive data types. Object, Array, and Function (which are all types of objects) 
+  are composite data types. Whereas Undefined and Null are special data types.
+  Primitive data types can hold only one value at a time, whereas composite data types can hold 
+  1.The String Data Type
+    The string data type is used to represent textual data (i.e. sequences of characters). Strings 
+    are created using single or double quotes surrounding one or more characters, as shown below:
+    collections of values and more complex entities. Let's discuss each one of them in detail.
+    eg:var a = 'Hi there!';  // using single quotes
+       var b = "Hi there!";  // using double quotes
+
+  2.The Number Data Type
+    The number data type is used to represent positive or negative numbers with or without decimal place, 
+    or numbers written using exponential notation e.g. 1.5e-4 (equivalent to 1.5x10-4).
+    eg:var a = 25;         // integer
+       var b = 80.5;       // floating-point number
+
+  3.The Boolean Data Type
+    The Boolean data type can hold only two values: true or false. It is typically used to store values 
+    like yes (true) or no (false), on (true) or off (false), etc. as demonstrated below:
+    eg:var isReading = true;   // yes, I'm reading
+       var isSleeping = false; // no, I'm not sleeping
+
+  4.The Undefined Data Type
+    The undefined data type can only have one value-the special value undefined. If a variable has been 
+    declared, but has not been assigned a value, has the value undefined.
+    eg:var a;
+       var b = "Hello World!"
+ 
+       alert(a) // Output: undefined
+       alert(b) // Output: Hello World!
+
+  5.The Null Data Type
+    This is another special data type that can have only one value-the null value. A null value means
+    that there is no value. It is not equivalent to an empty string ("") or 0, it is simply nothing.
+    A variable can be explicitly emptied of its current contents by assigning it the null value.
+    eg:var a = null;
+       alert(a); // Output: null
+ 
+      var b = "Hello World!"
+      alert(b); // Output: Hello World!
+ 
+      b = null;
+      alert(b) // Output: null
+
+  6.The Object Data Type
+    The object is a complex data type that allows you to store collections of data.
+    An object contains properties, defined as a key-value pair. A property key (name) is always a string, 
+    but the value can be any data type, like strings, numbers, booleans, or complex data types like arrays, 
+    function and other objects. You'll learn more about objects in upcoming chapters.
+    eg:var car = {
+    modal: "BMW X3",
+    color: "white",
+    doors: 5
+    }
+The following example will show you the simplest way to create an object in JavaScript.
+  
