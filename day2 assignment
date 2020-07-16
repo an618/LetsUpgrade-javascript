@@ -1,0 +1,76 @@
+Q2)Explain remaining methods of string and array?
+->Methods of Array
+ 1.Splicing an Array
+   The splice() method can be used to add new items to an array:
+   eg:var fruits = ["Banana", "Orange", "Apple", "Mango"];
+     fruits.splice(2, 0, "Lemon", "Kiwi");
+ 2.Merging (Concatenating) Arrays
+   The concat() method creates a new array by merging (concatenating) existing arrays
+   eg:var myGirls = ["Cecilie", "Lone"];
+     var myBoys = ["Emil", "Tobias", "Linus"];
+     var myChildren = myGirls.concat(myBoys);   // Concatenates (joins) myGirls and myBoys
+ 3.Automatic toString()
+   JavaScript automatically converts an array to a comma separated string when a primitive value is
+   expected.
+   This is always the case when you try to output an array.
+   These two examples will produce the same result:
+   eg:var fruits = ["Banana", "Orange", "Apple", "Mango"];
+      document.getElementById("demo").innerHTML = fruits.toString();
+  
+ ->Methods of string
+ 1.Searching for a String in a String
+   The search() method searches a string for a specified value and returns the position of the match:
+   eg:var str = "Please locate where 'locate' occurs!";
+      var pos = str.search("locate");
+ 2.The slice() Method
+   slice() extracts a part of a string and returns the extracted part in a new string.
+   The method takes 2 parameters: the start position, and the end position (end not included).
+   This example slices out a portion of a string from position 7 to position 12 (13-1):
+   eg:var str = "Apple, Banana, Kiwi";
+      var res = str.slice(7, 13);
+ 3.The substring() Method
+   substring() is similar to slice().
+   The difference is that substring() cannot accept negative indexes.
+   eg:var str = "Apple, Banana, Kiwi";
+      var res = str.substring(7, 13);
+      
+Q1)Ans      
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Q1 Js code which takes input from user and logs it into console</h2>>
+<script>
+    var input =prompt("Enter your name");
+    console.log(input);
+    </script>
+</body>
+</html>
+      
+
+
+Q3)Ans
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>code to ask the user if he is 21+ and log the value "Can Drink","Cannot Drink</h2>>"
+    <script>
+      var age = confirm("Are you over 21?");
+      if(age==true)
+      console.log("Can drink");
+      else
+      console.log("Cant drink");
+        
+    </script>
+    
+</body>
+</html>
